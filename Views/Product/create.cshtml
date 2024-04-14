@@ -1,0 +1,33 @@
+﻿
+@{
+}
+@model ProductDetail
+
+<form method="post" action="Create" enctype="multipart/form-data" class="mt-5">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="Title">
+       
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+
+    </div>
+    <div class="mb-3">
+        <label class="form-label">price</label>
+        <input type="number" class="form-control" asp-for="Price">
+
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Image" class="control-label"></label>
+        <div class="custom-file">
+            <input asp-for="Image" class="custom-file-input"/>
+           
+        </div>
+
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
